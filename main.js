@@ -9,8 +9,8 @@ import {
   Mesh,
   TorusGeometry
 } from 'three';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+import { FontLoader } from 'three/addons/loaders/FontLoader';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 
 // Size
@@ -53,6 +53,7 @@ fontLoader.load(
         font,
         size: 0.5,
         height: 0.2,
+        depth: 0.1,
         curveSegments: 12,
         bevelEnabled: true,
         bevelThickness: 0.03,
